@@ -17,8 +17,12 @@ void loop()
 if (digitalRead(buttonPin) == LOW)   //Not pressed - HIGH; Pressed - LOW
    {  
     buttonState++;
-    if (buttonState > 3) buttonState = 1;  //button State from 1 to 3
-    //  
+}
+    if (buttonState > 3) //button State from 1 to 3
+    {
+      buttonState = 1; 
+    }  
+    
     delay(450);             /////handle debouncing//////////////
    }// end if digitalRead(buttonPin)
 ///////////////////////////////////
