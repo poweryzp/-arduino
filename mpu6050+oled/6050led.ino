@@ -27,6 +27,7 @@ void setup()
 {
   Wire.begin();
   accelgyro.initialize();
+  pinMode(8,OUTPUT);
 }
 
 void u8g_prepare(void) {
